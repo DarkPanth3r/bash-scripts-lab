@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 echo "Hello $USER"
 echo "Hey i am boot and will be telling you about the current processes:"
 echo "Running processes List"

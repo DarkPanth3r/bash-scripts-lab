@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-arr=('-' '|' '/' '-' '\' '|')
+arr=('-' '\' '|' '/')
 while true; do
 	for c in "${arr[@]}"; do
-		printf "\r %c " $c
+		echo -en "\r $c "
 		sleep .5
 	done
 done

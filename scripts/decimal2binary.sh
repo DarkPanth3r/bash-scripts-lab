@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 for ((i = 32; i >= 0; i--)); do
-	r=$((2 ** $i))
+	r=$((2 ** i))
 	Probablity+=($r)
 done
 
@@ -11,7 +11,7 @@ done
 }
 
 echo -en "Decimal\t\tBinary\n"
-for input_int in $@; do
+for input_int; do
 	s=0
 	test ${#input_int} -gt 11 && {
 		echo "Support Upto 10 Digit number :: skiping \"$input_int\""
@@ -22,12 +22,12 @@ for input_int in $@; do
 
 	for n in ${Probablity[@]}; do
 
-		if [[ $input_int -lt ${n} ]]; then
+		if [[ $input_int -lt $n ]]; then
 			[[ $s == 1 ]] && printf "%d" 0
 		else
-			printf "%d" 1
+			echo -n 1
 			s=1
-			input_int=$(($input_int - ${n}))
+			input_int=$((input_int - n))
 		fi
 	done
 	echo -e

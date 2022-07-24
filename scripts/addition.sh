@@ -1,8 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-echo 'Enter the First Number :'
-read a
-echo 'Enter the Second Number :'
-read b
-x=$(expr "$a" + "$b")
-echo $a + $b = $x
+echo -n 'Enter the First Number: '
+read -r a
+echo -n 'Enter the Second Number: '
+read -r b
+echo "$a + $b = $((a+b))"

@@ -1,6 +1,6 @@
 #!/bin/bash
-echo .Enter the First Number: .
+echo -n 'Enter the First Number: '
 read a
-echo .Enter the Second Number: .
+echo -n "Enter the Second Number: "
 read b
-echo "$a / $b = $(expr $a / $b)"
+echo "$a / $b = $((a / b))"

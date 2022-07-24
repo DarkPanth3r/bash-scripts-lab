@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-list=($(ls))
+set -- *
 
-for f in "${list[@]}";do
-    echo $f
+for i; do
+	echo "$i"
 done
