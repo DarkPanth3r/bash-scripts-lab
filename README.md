@@ -60,13 +60,11 @@ A collection of simple Bash scripts.
 1. [Hex2Decimal](scripts/hextodec.sh): convert Hex number back to Decimal
 
 <<<<<<< HEAD
-## More resources
+
 =======
 ## Image manipulation
 
 1. [thumbnail.sh](scripts/thumbnail.sh): create 400px thumbnails from images in a folder
 
-## License
->>>>>>> d4175792ce06f82101e6fa770bd6bfd4ffe427e0
-
+## More resources
 * https://www.freecodecamp.org/news/shell-scripting-crash-course-how-to-write-bash-scripts-in-linux/
