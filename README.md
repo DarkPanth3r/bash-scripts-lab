@@ -59,8 +59,6 @@ A collection of simple Bash scripts.
 1. [Decimal2Hex.sh](scripts/dec2hex.sh): convert Decimal Number to Hex
 1. [Hex2Decimal](scripts/hextodec.sh): convert Hex number back to Decimal
 
-<<<<<<< HEAD
-
 =======
 ## Image manipulation
 
